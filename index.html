@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    *{
+    margin: auto;
+    padding: auto;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://i.pinimg.com/564x/39/b9/32/39b93262cacc6e91da84395622232372.jpg);
+    background-size: 1400px;
+    background-position: center;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+container{
+    text-decoration: double;
+}
+table{
+    width: 100px;
+    box-shadow: -1px 6px 6px -1px rgba( 0, 0,0, 0);
+}
+table, td, th{
+    text-align: center;
+    table-layout: center;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+td{
+    font-size: 10px;
+}
+th{
+    background-color: blueviolet;
+    color: rgb(47, 38, 53);
+}
+tr:nth-child(odd){
+    background-color: rgb(190, 128, 248);
+}
+tr:nth-child(odd):hover{
+    background-color: rgb(95, 64, 124);
+    color: rgb(160, 142, 177);
+}
+tr:nth-child(even):hover{
+    background-color: rgb(122, 103, 139);
+    color: rgb(72, 53, 90);
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Shellai's Drinks</h2>
+        <h4 class="text-center">Customer Order</h4>
+        <div class="scrollable-table">
+    <table>
+    <tr>
+        <th>Number</th>
+        <th>Customer</th>
+        <th>Address</th>
+        <th>Order</th>
+        <th>Items</th>
+        <th>Price</th>
+        <th>Amount</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>01</td>
+        <td>Kyla</td>
+        <td>Pulang lupa</td>
+        <td>Avocado</td>
+        <td>3</td>
+        <td>50</td>
+        <td>150</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>02</td>
+        <td>Mary</td>
+        <td>Mambog</td>
+        <td>Okinawa</td>
+        <td>1</td>
+        <td>50</td>
+        <td>50</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>03</td>
+        <td>Yeen</td>
+        <td>Pulang lupa</td>
+        <td>Chocolate</td>
+        <td>5</td>
+        <td>50</td>
+        <td>250</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>04</td>
+        <td>Rizzalyn</td>
+        <td>Bayanan</td>
+        <td>Cookies & Cream</td>
+        <td>1</td>
+        <td>50</td>
+        <td>50</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>05</td>
+        <td>Razel</td>
+        <td>Addas</td>
+        <td>Strawberry shake</td>
+        <td>1</td>
+        <td>100</td>
+        <td>100</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>Diana</td>
+        <td>Bulacan</td>
+        <td>Avocado, Chocolate, Strawberry</td>
+        <td>3</td>
+        <td>50</td>
+        <td>150</td>
+        <td>Pending</td>
+    </tr>
+    <tr>
+        <td>07</td>
+        <td>Rhazel</td>
+        <td>Gawaran</td>
+        <td>Chocolate shake</td>
+        <td>1</td>
+        <td>50</td>
+        <td>50</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>08</td>
+        <td>Aliyah</td>
+        <td>Las Piñas</td>
+        <td>Ice Amerikano</td>
+        <td>1</td>
+        <td>100</td>
+        <td>100</td>
+        <td>Pending</td>
+    </tr>
+    <tr>
+        <td>09</td>
+        <td>Rain</td>
+        <td>Las Piñas</td>
+        <td>Caramel Machiato</td>
+        <td>1</td>
+        <td>85</td>
+        <td>85</td>
+        <td>Pending</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Kiro</td>
+        <td>Bayanan</td>
+        <td>Avocado shake, Chocolate shake, Green Apple soda</td>
+        <td>6</td>
+        <td>100, 100, 60</td>
+        <td>260</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>trisha</td>
+        <td>Progressive</td>
+        <td>Chocolate, Taro</td>
+        <td>4</td>
+        <td>50</td>
+        <td>200</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Edlyn</td>
+        <td>Greenfields</td>
+        <td>Taro,Red velvet</td>
+        <td>6</td>
+        <td>50</td>
+        <td>300</td>
+        <td>Pending</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Casandra</td>
+        <td>Bayanan</td>
+        <td>Mango shake, Green Apple soda</td>
+        <td>3</td>
+        <td>100, 60</td>
+        <td>260</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>Cathlyn</td>
+        <td>Molino 2</td>
+        <td>Avocado shake, Green Apple soda</td>
+        <td>4</td>
+        <td>100, 60</td>
+        <td>320</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>Shan</td>
+        <td>Imus</td>
+        <td>four season soda, Green Apple soda</td>
+        <td>6</td>
+        <td>60</td>
+        <td>360</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>Dave</td>
+        <td>Bayanan</td>
+        <td>Ice Amerikano</td>
+        <td>5</td>
+        <td>100,</td>
+        <td>500</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>Ricky</td>
+        <td>Mambog</td>
+        <td>Avocado shake, Chocolate shake, Strawberry shake</td>
+        <td>6</td>
+        <td>100</td>
+        <td>600</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Jerome</td>
+        <td>Mambog</td>
+        <td>Blue Berry soda, Green Apple soda</td>
+        <td>6</td>
+        <td>60</td>
+        <td>360</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>Yuki</td>
+        <td>Felicia</td>
+        <td>Green Apple soda</td>
+        <td>1</td>
+        <td>60</td>
+        <td>60</td>
+        <td>Delivered</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>Lexi</td>
+        <td>Bayanan</td>
+        <td>Avocado shake, Chocolate shake</td>
+        <td>4</td>
+        <td>100</td>
+        <td>400</td>
+        <td>Delivered</td>
+    </tr>
+</table>
+</div>
+</div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
